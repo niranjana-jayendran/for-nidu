@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>For Nidu ✦</title>
+  <meta name="description" content="A little handmade world for Nidu's birthday.">
+  <meta name="theme-color" content="#f5f0e4">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A6%8B%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Homemade+Apple&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-locked">
+
+  <!-- index tabs (appear after the letter is opened) -->
+  <nav class="tabs" id="tabs" aria-label="Sections">
+    <a href="#mail" data-tab="mail"><b>01</b><span>mail</span></a>
+    <a href="#archives" data-tab="archives"><b>02</b><span>archives</span></a>
+    <a href="#letters" data-tab="letters"><b>03</b><span>open when</span></a>
+    <a href="#jar" data-tab="jar"><b>04</b><span>remember</span></a>
+    <a href="#quiz" data-tab="quiz"><b>05</b><span>quiz</span></a>
+  </nav>
+
+  <main>
+    <!-- ───────────── 01 · YOU'VE GOT MAIL ───────────── -->
+    <section id="mail" class="sec sec-mail">
+      <div class="mail-deco" id="mailDeco" aria-hidden="true"></div>
+
+      <header class="mail-head">
+        <p class="type-eyebrow" data-t="mail.eyebrow"></p>
+        <h1 class="mail-title"><span class="mt-small" data-t="mail.headingSmall"></span> <span class="mt-big" data-t="mail.headingBig"></span></h1>
+      </header>
+
+      <div class="env-stage">
+        <div class="env-float">
+          <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Turn the envelope over">
+            <!-- front: address side -->
+            <div class="env-face env-front">
+              <div class="ef-paper">
+                <p class="ef-return" id="efReturn"></p>
+                <span class="ef-airmail">par avion<br><b>by air mail</b></span>
+                <div class="ef-stamp stamp" id="efStamp"></div>
+                <div class="ef-postmark" id="efPostmark"></div>
+                <div class="ef-address">
+                  <span class="ef-to">to —</span>
+                  <p class="ef-name" data-t="mail.addressTo"></p>
+                  <ul class="ef-lines" id="efLines"></ul>
+                </div>
+                <div class="ef-bfly" id="efBfly"></div>
+              </div>
+            </div>
+            <!-- back: flap + wax seal -->
+            <div class="env-face env-back">
+              <div class="env-inside"></div>
+              <div class="env-letter" id="envLetter">
+                <span class="el-greet"></span>
+                <i></i><i></i><i></i><i></i><i></i>
+              </div>
+              <div class="env-pocket"><i class="pk-l"></i><i class="pk-r"></i><i class="pk-b"></i></div>
+              <p class="env-back-note" data-t="mail.backNote"></p>
+              <div class="env-flap-wrap"><div class="env-flap"></div></div>
+              <button class="env-seal" id="envSeal" aria-label="Break the wax seal">
+                <span class="seal-half l"></span><span class="seal-half r"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <p class="env-hint" id="envHint"><span></span></p>
+      </div>
+    </section>
+
+    <!-- ───────────── 02 · THE NIDU ARCHIVES ───────────── -->
+    <section id="archives" class="sec sec-archives torn">
+      <div class="seam-deco seam-1" id="seam1" aria-hidden="true"></div>
+      <header class="arc-head">
+        <span class="dymo" data-t="archives.label"></span>
+        <h2 class="arc-title">
+          <span class="at-small" data-t="archives.titleSmall"></span>
+          <span class="at-big" data-t="archives.titleBig"></span>
+          <em class="at-italic" data-t="archives.titleItalic"></em>
+        </h2>
+        <p class="arc-kicker type" data-t="archives.kicker"></p>
+        <div class="rubber-stamp" data-t="archives.stamp"></div>
+        <p class="arc-intro hand"><span data-t="archives.intro"></span><span id="arcArrow"></span></p>
+      </header>
+      <div class="board" id="board"></div>
+    </section>
+
+    <!-- ───────────── 03 · OPEN WHEN ───────────── -->
+    <section id="letters" class="sec sec-letters torn">
+      <div class="seam-deco seam-2" id="seam2" aria-hidden="true"></div>
+      <header class="ow-head">
+        <p class="type-eyebrow light" data-t="openWhen.kicker"></p>
+        <h2 class="ow-title" data-t="openWhen.title"></h2>
+        <p class="ow-intro hand" data-t="openWhen.intro"></p>
+      </header>
+      <div class="ow-pile" id="pile"></div>
+    </section>
+
+    <!-- ───────────── 04 · REMEMBER WHEN ───────────── -->
+    <section id="jar" class="sec sec-jar torn">
+      <div class="seam-deco seam-3" id="seam3" aria-hidden="true"></div>
+      <header class="jar-head">
+        <p class="type-eyebrow" data-t="rememberWhen.kicker"></p>
+        <h2 class="jar-title" data-t="rememberWhen.title"></h2>
+        <p class="jar-intro hand" data-t="rememberWhen.intro"></p>
+      </header>
+      <div class="jar-stage">
+        <div class="jar-wrap">
+          <button class="jar" id="jarBtn" aria-label="Pull a memory from the jar"></button>
+          <span class="jar-tag" data-t="rememberWhen.tag"></span>
+        </div>
+        <div class="mem-slot">
+          <article class="mem-card" id="memCard" aria-live="polite">
+            <span class="mem-tape"></span>
+            <p class="mem-no" id="memNo">no. —</p>
+            <p class="mem-lead">remember when…</p>
+            <p class="mem-text" id="memText"></p>
+            <span class="mem-art" id="memArt" aria-hidden="true"></span>
+          </article>
+          <button class="hand-btn" id="memBtn"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── 05 · QUIZ ───────────── -->
+    <section id="quiz" class="sec sec-quiz torn">
+      <div class="seam-deco seam-4" id="seam4" aria-hidden="true"></div>
+      <header class="qz-head">
+        <p class="type-eyebrow" data-t="quiz.kicker"></p>
+        <h2 class="qz-title" data-t="quiz.title"></h2>
+        <p class="qz-intro hand" data-t="quiz.intro"></p>
+      </header>
+      <div class="qz-stack" id="qzStack" aria-live="polite"></div>
+    </section>
+
+    <footer class="sec sec-foot torn" id="foot"></footer>
+  </main>
+
+  <!-- overlays -->
+  <div class="overlay" id="letterOv" hidden>
+    <div class="ov-scrim" data-close></div>
+    <article class="letter-paper" id="letterPaper"></article>
+  </div>
+
+  <div class="overlay" id="owModal" hidden>
+    <div class="ov-scrim" data-close></div>
+    <article class="ow-letter" id="owLetter"></article>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/art.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -28,7 +28,7 @@ window.SITE = {
     addressTo: "Miss Nidu",
     addressLines: ["the birthday girl", "wherever she is right now", "planet earth ✦"],
     returnAddress: ["from: someone who misses you", "a few time zones away"],
-    postmark: { ring: "WITH LOVE ✦ BIRTHDAY POST ✦", line1: "23 OCT", line2: "2026" },
+    postmark: { ring: "WITH LOVE ✦ BIRTHDAY POST ✦", line1: "22 OCT", line2: "2026" },
     stampText: "FIRST CLASS LOVE",
     backNote: "happy birthday, you",
     hintFront: "tap the envelope to turn it over",

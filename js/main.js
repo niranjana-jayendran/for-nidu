@@ -419,8 +419,8 @@
     <div class="foot-pm">${A.postmark({ ring: "DELIVERED WITH LOVE ✦ " + S.year + " ✦", line1: "FOR", line2: S.friend.toUpperCase() })}</div>
     <h2 class="foot-big">${esc(words.join(" "))}<b>${esc(lastWord)}</b></h2>
     <p class="foot-line">${esc(F.line)}</p>
-    <p class="foot-sig">— ${esc(F.signature)}</p>
-    <p class="foot-small">${esc(F.small)}</p>
+    <p class="foot-sig">${esc(F.signature)}</p>
+    ${F.small ? `<p class="foot-small">${esc(F.small)}</p>` : ""}
     <a class="hand-btn foot-top" href="#mail" style="display:inline-block;text-decoration:none">read the first letter again ↑</a>
     <div class="foot-bfly flap" style="left:12%;top:24%;transform:rotate(-16deg)">${A.butterfly({ color: C.powder, dark: C.ice, light: C.corn })}</div>
     <div class="foot-bfly flap" style="right:10%;bottom:30%;width:38px;transform:rotate(20deg)">${A.butterfly({ color: C.corn, dark: C.ice, light: C.mist })}</div>`;

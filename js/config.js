@@ -257,8 +257,7 @@ window.SITE = {
   /* FOOTER ─────────────────────────────────────────────────────────────── */
   footer: {
     big: "Happy birthday, Nidu",
-    line: "wherever you are today, I hope it feels like being loved on purpose.",
-    signature: "your big sister",
-    small: "handmade with love (and a lot of blue) · 2026"
+    line: "Wishing you the best for ever and ever,",
+    signature: "your big sister <3"
   }
 };
